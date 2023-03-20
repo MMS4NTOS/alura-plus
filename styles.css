@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@400;700&family=Raleway:wght@500;700&display=swap');
+
+:root {
+    --cor-titulo: #FFFFFF;
+    --cor-texto: #C0C0C0;
+    --cor-botao: #167BF7;
+    --cor-fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-titulo);
+    font-family: var(--fonte-principal);
+    font-weight:  400;
+    font-size: 1.5rem;
+}
+
+.principal {
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.container__img {
+    margin: 1.5em 0 2em 0;
+    width: 60%;
+}
+
+.container__botao {
+    background-color: var(--cor-botao);
+    padding: 1em;
+    border-radius: 0.5rem;
+    color: var(--cor-titulo);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.25rem;
+}
+
+.container__botao:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    background-color:#6cabf8;
+    color: var(--cor-fundo);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 0.125rem solid var(--cor-titulo);
+}
+
+.container__aviso {
+    font-size: 0.75rem;
+    color: var(--cor-texto);
+}
+
+.secundario__img {
+    width: 50%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    height: 80vh;
+}
+
+ 
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor-titulo);
+    margin-bottom: 0.1em
+}
+
+.descricao__texto {
+    color: var(--cor-texto);
+    font-size: 1.25rem;
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    margin-top: 7.5rem;
+    text-align: center;
+    color: var(--cor-titulo);
+}
+
+.dispositivos__titulos {
+    font-size: 2.5rem;
+}
+
+.lista__item {
+    font-size: 1.5rem;
+}
+
+
+
+.rodape {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 10rem 6.25rem 2rem 6.25rem;
+}
+
+.rodape__logo {
+    width: 6.375rem;
+    align-self: center;
+}
+
+.rodape__lista {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.lista__link a {
+    color: var(--cor-titulo);
+    font-size: 1rem;
+}
+
+.lista__link a:hover {
+    color: var(--cor-botao);
+}
+
+.rodape__texto {
+    color: var(--cor-texto);
+    font-size: 0.875rem;
+}
